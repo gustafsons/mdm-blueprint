@@ -1,0 +1,46 @@
+FORMAT: 1A
+HOST: http://k1.kantar.com/api/v1/mdm/
+
+# MDM
+
+Designs for Kantar master data management within K-1
+
+## Country Collection [/countries]
+
+### List All Countries [GET]
+
++ Response 200 (application/json)
+
+        [
+           {
+                "id":"092dff7e677e421a",
+                "value":"United Kingdom",
+                "culture":"en-gb",
+                "depreciated":false,
+                "replaced_by":null
+            },{
+                "id":"98aca3a715ad2735",
+                "value":"United Kingdom of Great Britain",
+                "culture":"en-gb",
+                "depreciated":true,
+                "replaced_by":"092dff7e677e421a"
+            },{
+                "id":"960605dca69cb389",
+                "value":"Myanmar",
+                "culture":"base",
+                "depreciated":false,
+                "replaced_by":null
+            },{
+                "id":"960605dca69cb389",
+                "value":"Burma",
+                "culture":"base",
+                "depreciated":true,
+                "replaced_by":"960605dca69cb389"
+            },{
+                "id":"a044173692fea9f3",
+                "value":"Arctic Circle",
+                "culture":"app",
+                "depreciated":false,
+                "replaced_by":null
+            }
+        ]
